@@ -6,11 +6,19 @@ document.addEventListener("DOMContentLoaded", function() {
     if (missionButton && missionText) {
         // Initially hide the mission text
         missionText.style.display = "none";
+        missionButton.textContent = "Show Mission Statement";
 
         missionButton.addEventListener("click", function() {
-            // When button is clicked, show the text
-            missionText.style.display = "block";
-            missionText.innerHTML = "My mission statement is to create a sustainable development in Rwanda and Africa at large, by opening a youth company that will help match youths with available jobs through a website. This will be achieved within a five-to six year time frame.";
+            if (missionText.style.display === "none") {
+                // Show the text
+                missionText.style.display = "block";
+                missionText.innerHTML = "To drive sustainable development across Rwanda and the broader African continent by launching a youth-led enterprise that connects young people to employment opportunities through an innovative digital platform, with full implementation targeted within five to six years.";
+                missionButton.textContent = "Hide Mission Statement";
+            } else {
+                // Hide the text
+                missionText.style.display = "none";
+                missionButton.textContent = "Show Mission Statement";
+            }
         });
     }
 
@@ -99,3 +107,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
