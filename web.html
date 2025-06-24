@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Resume Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="container">
+    <header>
+        <nav>
+            <ul class="buttons">
+                <button><a href="#home">Home</a></button>
+                <button><a href="#skills">Skills</a></button>
+                <button><a href="#projects">Projects</a></button>
+                <button><a href="#contact">Contact</a></button>
+                <button><a href="#about">About</a></button>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--Home section-->
+    <section id="home">
+        <h1>Responsive Resume Website</h1>
+        <p id="fis">Web Developer passionate about creating modern, efficient websites.<br>
+            Student enrolling at AfricanLeadership University(ALU) under the major of <abbr title="Bachelor Software Engineering">BSE</abbr></p>
+        <button id="mission">Show Mission Statement</button>
+        <p id="missionText"></p>
+        <div id="missionContent" class="mission-text"></div>
+    </section>
+
+
+
+    <!--Skills section-->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill" data-skill="html-css">HTML (Basic & Advanced), CSS (Basic & Advanced)</div>
+            <div class="skill" data-skill="responsive">Responsive Design & Media Queries</div>
+            <div class="skill" data-skill="github">GitHub & Version Control</div>
+            <div class="skill" data-skill="javascript">JavaScript</div>
+            <div class="skill" data-skill="python">Python</div>
+            <div class="skill" data-skill="linux">Linux</div>
+            <div class="skill" data-skill="database">Database Management</div>
+        </div>
+
+
+        <div class="achievements-wrapper" id="achievementsWrapper">
+            <div class="achievements-container" id="achievements">
+                <!-- Achievements will be displayed here -->
+            </div>
+            <button id="skillsButton">Close</button>
+        </div>
+
+    </section>
+
+
+
+    <!--Project section-->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <div class="project-card-1">
+                <img src="airplane.jpg" alt="Project 1" placeholder="Project 1">
+                <h3>Project 1 <br>Airline Booking System</h3>
+                <p>This project was about an Airline Booking System.</p>
+                <p>Personal project</p>
+                <a href="https://github.com/jonathan-im/project-1" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card-2">
+                <img src="farmer-2260636.jpg" alt="Project 2" placeholder="Project 2">
+                <h3>Project 2 <br> Ciphers Agriculture PLP</h3>
+                <p>This project was about creating an app for farmers and buyers.</p>
+                <p>Group project</p>
+                <a href="https://github.com/g-irakora/Ciphers_Agriculture_PLP_2.git" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card-3">
+                <img src="calculator-385506.jpg" alt="Project 3" placeholder="Project 3">
+                <h3>Project 3 <br>Grade Calculator</h3>
+                <p>This project was about creating a grading calculator.</p>
+                <p>Personal project</p>
+                <a href="https://github.com/IshimweJ-Ona/Grade_Calculator.git" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card-4">
+                <img src="fot.jpg" alt="Project 4" placeholder="Project 4">
+                <h3>Project 4<br> Converter Currency</h3>
+                <p>This project was about developing a currency converter</p>
+                <p>Personal project</p>
+                <a href="https://github.com/IshimweJ-Ona/Currency_Converter_Homework-C3.git" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card-5">
+                <img src="stock-1863880.jpg" alt="Project 5" placeholder="Project 5">
+                <h3>Project 5 <br>Satellite Data Analysis</h3>
+                <p>This project was about creating a Satellite Data Analysis. <br> Group project</p>
+                <p>Group project</p>
+                <a href="https://github.com/Nzabinesha/lab-1_sateliteDataAnalysis.git" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card-6">
+                <img src="tv-627876_1920.jpg" alt="Project 6" placeholder="Project 6">
+                <h3>Project 6<br> Tv Show website</h3>
+                <p>The website is used for searching movies </p>
+                <p>Personal project</p>
+                <a href="https://github.com/IshimweJ-Ona/TV_Show.git" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Ishimwe Jonathan, a student at African Leadership University (ALU) pursuing a Bachelor of Software Engineering (BSE). I am passionate about web development and have experience in creating responsive and user-friendly websites.</p>
+        <p>I have worked on various projects, including an Airline Booking System, a Local Restaurant webpage, and a Currency Converter. I am proficient in HTML, CSS, JavaScript, and Python, and I am always eager to learn new technologies and improve my skills.</p>
+        <p>In my free time, I enjoy exploring new web development trends, contributing to open-source projects, and collaborating with other developers. I believe in the power of technology to solve real-world problems and am committed to making a positive impact through my work.</p>
+        <p>Feel free to connect with me on GitHub or LinkedIn to discuss potential  collaborations or to learn more about my projects.</p>
+
+    </section>
+
+    <!--Contact section-->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or connect on GitHub or LinkedIn.</p>
+
+        <div class="contact-info">
+            <div class="contact-info-item">
+                <h3>Email</h3>
+                <p><a href="mailto:j.ishimwe4@alustudent.com">Jonathan ISHIMWE</a></p>
+            </div>
+            <div class="contact-info-item">
+                <h3>GitHub</h3>
+                <p><a href="https://github.com/IshimweJ-Ona" target="_blank">IshimweJ-Ona</a></p>
+            </div>
+            <div class="contact-info-item">
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/jonathan-ishimwe-19418a35a" target="_blank">Jonathan Ishimwe</a></p>
+            </div>
+            <div class="contact-info-item">
+                <h3>Phone Number</h3>
+                <p style="color:black;">+250 793 417 088 <br> +250 735 467 929</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Ishimwe Jonathan</p>
+    </footer>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
