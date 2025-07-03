@@ -1,3 +1,58 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Get DOM elements
+    const navbar = document.querySelector('.navbar');
+    const menuBtn = document.querySelector('.menu-btn');
+    const closeBtn = document.querySelector('.close-btn');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const overlay = document.querySelector('.overlay');
+
+    // Function to toggle menu
+    function toggleMenu(show) {
+        navbar.classList.toggle('active', show);
+        document.body.classList.toggle('menu-open', show);
+    }
+
+    // Event Listeners
+    menuBtn.addEventListener('click', () => {
+        toggleMenu(true);
+    });
+
+    closeBtn.addEventListener('click', () => {
+        toggleMenu(false);
+    });
+
+    // Close menu when clicking overlay
+    overlay.addEventListener('click', () => {
+        toggleMenu(false);
+    });
+
+    // Close menu when clicking nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            toggleMenu(false);
+        });
+    });
+
+    // Close menu when pressing Escape key
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && navbar.classList.contains('active')) {
+            toggleMenu(false);
+        }
+    });
+
+    // Handle window resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            if (window.innerWidth > 768 && navbar.classList.contains('active')) {
+                toggleMenu(false);
+            }
+        }, 250);
+    });
+});
+
+
 document.addEventListener("DOMContentLoaded", function() {
     // Mission Statement functionality
     const missionButton = document.getElementById("mission");
